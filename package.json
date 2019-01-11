@@ -10,7 +10,8 @@
     "factory": "node ./creational-patterns/factory/index.js",
     "singleton:1": "node ./creational-patterns/singleton/index.js",
     "singleton:2": "node ./creational-patterns/singleton/dbConnection.js",
-    "builder": "node ./creational-patterns/builder/index.js"
+    "builder": "node ./creational-patterns/builder/index.js",
+    "decorator": "node ./structural-patterns/decorator/index.js"
   },
   "repository": {
     "type": "git",
