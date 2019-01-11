@@ -1,0 +1,19 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "Design Patterns implemented in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seb7887/design-patterns.git"
+  },
+  "author": "Sebastian Matias Segura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seb7887/design-patterns/issues"
+  },
+  "homepage": "https://github.com/seb7887/design-patterns#readme"
+}

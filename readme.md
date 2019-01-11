@@ -14,3 +14,10 @@ Is no mandatory to know all of them, you should be able to implement some of the
 * Creational
 * Structural
 * Behavioral
+
+# Anti-Design Patterns
+* There are bad solutions or bad practices
+* **Good patterns in the wrong context = Anti-Patterns**
+* Example:
+  - Changing prototype on an instance
+  - A large number of variables in the global context
