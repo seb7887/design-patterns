@@ -30,3 +30,25 @@ const groupOfObjects = new TreeItems('group', [firstObj, secondObj]);
 // tree
 const Tree = new TreeItems('TREE', [groupOfObjects, thirdObj]);
 ```
+
+# Facade Pattern
+* Provides convenient higher-level interface
+* Hides complex code (logic)
+* **Facade = wrapper**
+* Readable code
+```javascript
+const facadeWrapper = (() => {
+  const one = (paramOne) => {
+    // difficult logic
+  }
+  const two = (paramTwo) => {
+    // difficult logic
+  }
+  return {
+    one: one,
+    two: two
+  }
+})();
+// Get access through the wrapper
+facadeWrapper.one(paramOne);
+```

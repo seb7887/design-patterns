@@ -12,7 +12,8 @@
     "singleton:2": "node ./creational-patterns/singleton/dbConnection.js",
     "builder": "node ./creational-patterns/builder/index.js",
     "decorator": "node ./structural-patterns/decorator/index.js",
-    "composite": "node ./structural-patterns/composite/index.js"
+    "composite": "node ./structural-patterns/composite/index.js",
+    "facade": "node ./structural-patterns/facade/index.js"
   },
   "repository": {
     "type": "git",
