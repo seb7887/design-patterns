@@ -107,3 +107,27 @@ const Exposer = (function() {
 Exposer.first();  // Output: This is a method I want to expose!
 Exposer.second(); // Output: Inside a private method
 ```
+
+# Factory Pattern
+* Used to provide an interface to create objects
+* It's a good practice
+* Allows to separate the object from its implementation
+* Allows to create different instance based on a condition
+* Allows not to expose the constructors of the objects, preventing their modification
+```javascript
+const Factory = () => {
+  this.getItem = (itemType) => {
+    if (itemType === 'firstType') {
+      const itemOne = require('./itemOneSubClass')();
+    }
+    if (itemType === 'secondType') {
+      const itemTwo = require('./itemTwoSubClass')();
+    }
+    if (itemType === 'thidType') {
+      const itemThree = require('./itemThreeSubClass')();
+    }
+  }
+}
+
+Factory.getItem('secondItem');
+```
