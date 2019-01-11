@@ -4,7 +4,7 @@
   "description": "Design Patterns implemented in Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "constructor": "node ./creational-patterns/constructor/constructor.js"
   },
   "repository": {
     "type": "git",
