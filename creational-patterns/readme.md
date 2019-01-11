@@ -131,3 +131,26 @@ const Factory = () => {
 
 Factory.getItem('secondItem');
 ```
+
+# Singleton Pattern
+* It's a good practice
+* Restricts instantiation of a class to a single object
+* Keeps the same instance of that object
+* Implementation based on the condition => **"only one instance"**
+```javascript
+const Singleton = (function() {
+  let obj;
+  function createInstance() {
+    let obj = new Object();
+    return obj;
+  }
+  return {
+    getInstance: function() {
+      if (!obj) {
+        obj = createInstance();
+      }
+      return obj;
+    }
+  }
+})();
+```
