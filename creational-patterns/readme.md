@@ -154,3 +154,26 @@ const Singleton = (function() {
   }
 })();
 ```
+
+# Builder Pattern
+* Allows to simplify the construction of a complex object
+* Allows to separate the construction and representation
+* Allows composition
+* Allows different representations for the object that is constructed
+```javascript
+const person1 = new Person('name', true, true, 7);
+const person2 = new Person('name', false, false);
+const person3 = new Person('name', true);
+constructor(name, isEmployee = false, isManager = false, partTime = 0) {
+  this.name = name;
+  this.isEmployee = isEmployee;
+  this.isManager = isManager;
+  this.partTime = partTime;
+}
+
+// Using the Builder Pattern:
+const person1 = new Person('name').employee().manager().partTime(7).build();
+const person2 = new Person('name').build();
+const person3 = new Person('name').employee().build();
+```
+* **We have the same class but totally different objects**

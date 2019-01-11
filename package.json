@@ -9,7 +9,8 @@
     "module": "node ./creational-patterns/module/index.js",
     "factory": "node ./creational-patterns/factory/index.js",
     "singleton:1": "node ./creational-patterns/singleton/index.js",
-    "singleton:2": "node ./creational-patterns/singleton/dbConnection.js"
+    "singleton:2": "node ./creational-patterns/singleton/dbConnection.js",
+    "builder": "node ./creational-patterns/builder/index.js"
   },
   "repository": {
     "type": "git",
