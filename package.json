@@ -4,7 +4,8 @@
   "description": "Design Patterns implemented in Javascript",
   "main": "index.js",
   "scripts": {
-    "constructor": "node ./creational-patterns/constructor/constructor.js"
+    "constructor": "node ./creational-patterns/constructor/constructor.js",
+    "prototype": "node ./creational-patterns/prototype/prototype.js"
   },
   "repository": {
     "type": "git",

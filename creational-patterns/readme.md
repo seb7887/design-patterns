@@ -32,3 +32,18 @@ class ObjectName {
 const newObject = new ObjectName('foo', 'bar'); 
 newObject.toString();
 ```
+
+# Prototype Pattern
+* To clone an object, a constructor must exist to instantiate the first object. Next, by using the keyword **prototype** variables and methods bind to the object's structure
+```javascript
+const ObjectName = function(paramOne, paramTwo) {
+  this.paramOne = paramOne;
+  this.paramTwo = paramTwo;
+}
+
+// Prototype
+ObjectName.prototype.toString = function() {
+  return this.paramOne + ' ' + this.paramTwo;
+}
+```
+* With ES6 you can use classes directly
