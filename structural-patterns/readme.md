@@ -14,3 +14,19 @@
 const car = new Car('bmw');
 const superCar = new carTunning(car); // decorator
 ```
+
+# Composite Pattern
+* Group of items (work with Tree data structure)
+* Tree structures of objects
+* Class hierarchies with **primitive and objects**
+* Any level of complexity
+```javascript
+// items (leaves)
+const firstObj = new Item('one item');
+const secondObj = new Item('second item');
+const thirdObj = new Item('third item');
+// sub-tree
+const groupOfObjects = new TreeItems('group', [firstObj, secondObj]);
+// tree
+const Tree = new TreeItems('TREE', [groupOfObjects, thirdObj]);
+```
