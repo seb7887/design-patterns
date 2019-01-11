@@ -47,3 +47,63 @@ ObjectName.prototype.toString = function() {
 }
 ```
 * With ES6 you can use classes directly
+
+# Module Pattern
+* Used to keeping pieces of code independent of other components -> well-structured code
+* User to guarantee **maintainability** (avoid code duplication), **namespacing** (global variables, namespace pollution), **reusability** (reuse your code in different projects)
+* **Sharing global variables between unrelated code is a bad practice**
+```javascript
+(function() {
+  // declare private variables and/or functions
+})
+```
+* For example:
+```javascript
+const HTMLChanger = (function() {
+  const contents = 'contents'
+
+  var changeHTML = function() {
+    const element = document.getElementById('attribute-to-change');
+    element.innerHTML = contents;
+  }
+
+  return {
+    callChangeHTML: function() {
+      changeHTML();
+      console.log(contents);
+    }
+  };
+
+})();
+
+HTMLChanger.callChangeHTML();       // Outputs: 'contents'
+console.log(HTMLChanger.contents);  // undefined
+```
+## Revaling Module Pattern
+* Used to maintain encapsulation and reveal certain variables and methods returned in an object literal
+```javascript
+const Exposer = (function() {
+  let privateVariable = 10;
+
+  const privateMethod = function() {
+    console.log('Inside a private method');
+    privateVariable++;
+  }
+
+  const methodToExpose = function() {
+    console.log('This is a method I want to expose!');
+  }
+
+  const otherMethodIWantToExpose = function() {
+    privateMethod();
+  }
+
+  return {
+    first: methodToExpose,
+    second: otherMethodIWantToExpose
+  }
+})();
+
+Exposer.first();  // Output: This is a method I want to expose!
+Exposer.second(); // Output: Inside a private method
+```

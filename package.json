@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "constructor": "node ./creational-patterns/constructor/constructor.js",
-    "prototype": "node ./creational-patterns/prototype/prototype.js"
+    "prototype": "node ./creational-patterns/prototype/prototype.js",
+    "module": "node ./creational-patterns/module/index.js"
   },
   "repository": {
     "type": "git",
