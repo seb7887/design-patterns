@@ -37,3 +37,14 @@ ChangeStrategt(newStrategy) { ... }
 StrategyOne() { ... }
 StrategyTwo() { ... }
 ```
+
+# Observer Pattern
+* When an object want to publish information and many objects need to receive that information
+* Publish - Subscribe
+```javascript
+subscribe(observer) {
+  this.subscribers.push(observer);
+}
+// for observers
+notify() { ... }
+```
