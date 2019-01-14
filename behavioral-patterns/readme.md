@@ -48,3 +48,14 @@ subscribe(observer) {
 // for observers
 notify() { ... }
 ```
+
+# Chain of Responsability Pattern
+* Group of objects is trying to solve one problem
+* If object is not able to solve the problem, then pass it (= msg)
+* Rules: 1st match -> **act**, every match acts **on the msg** without specifyin a receiver explicity
+```javascript
+// 1st
+listener.setNext('2nd listener');
+// 2nd
+listener.setNext('3rd listener');
+```

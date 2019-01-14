@@ -16,7 +16,8 @@
     "facade": "node ./structural-patterns/facade/index.js",
     "flyweight": "node ./behavioral-patterns/flyweight/main.js",
     "strategy": "node ./behavioral-patterns/strategy/main.js",
-    "observer": "node ./behavioral-patterns/observer/main.js"
+    "observer": "node ./behavioral-patterns/observer/main.js",
+    "chain": "node ./behavioral-patterns/chain-of-responsability/main.js"
   },
   "repository": {
     "type": "git",

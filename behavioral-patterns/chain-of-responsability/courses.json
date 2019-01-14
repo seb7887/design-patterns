@@ -1,0 +1,24 @@
+{
+  "ssr": [
+    {
+      "name": "Next.js",
+      "price": 15
+    }
+  ],
+  "language": [
+    {
+      "name": "Javascript",
+      "price": 20
+    },
+    {
+      "name": "Kotlin",
+      "price": 10
+    }
+  ],
+  "music": [
+    {
+      "name": "Guitar",
+      "price": 30
+    }
+  ]
+}
