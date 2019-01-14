@@ -13,7 +13,8 @@
     "builder": "node ./creational-patterns/builder/index.js",
     "decorator": "node ./structural-patterns/decorator/index.js",
     "composite": "node ./structural-patterns/composite/index.js",
-    "facade": "node ./structural-patterns/facade/index.js"
+    "facade": "node ./structural-patterns/facade/index.js",
+    "flyweight": "node ./behavioral-patterns/flyweight/main.js"
   },
   "repository": {
     "type": "git",

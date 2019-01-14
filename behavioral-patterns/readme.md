@@ -8,3 +8,22 @@
 * Flyweight objects are **inmutable** (unchangeable) - changes will affect other objects
 * Benefit: reduce # of objects, decrease memory consumption, increase performance
 * Structure
+```javascript
+class Course {
+  constructor(data) {
+    this.flyweight = FlyweightFactory.get(data.user, data.completed);
+    this.title = data.title;
+  }
+}
+
+class Flyweight {
+  constructor(user, completed) {
+    this.user = user;
+    this.completed = completed;
+  }
+}
+
+const FlyweightFactory = (() => {
+  // logic
+})();
+```
