@@ -27,3 +27,13 @@ const FlyweightFactory = (() => {
   // logic
 })();
 ```
+
+# Strategy Pattern
+* Define a family of different algorithms and encapsulate each one. Example -> Payment Methods
+* Change strategy dynamically
+* Structure
+```javascript
+ChangeStrategt(newStrategy) { ... }
+StrategyOne() { ... }
+StrategyTwo() { ... }
+```

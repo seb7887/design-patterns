@@ -14,7 +14,8 @@
     "decorator": "node ./structural-patterns/decorator/index.js",
     "composite": "node ./structural-patterns/composite/index.js",
     "facade": "node ./structural-patterns/facade/index.js",
-    "flyweight": "node ./behavioral-patterns/flyweight/main.js"
+    "flyweight": "node ./behavioral-patterns/flyweight/main.js",
+    "strategy": "node ./behavioral-patterns/strategy/main.js"
   },
   "repository": {
     "type": "git",
